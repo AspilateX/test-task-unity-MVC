@@ -20,7 +20,7 @@ namespace Game.Scripts.Systems.Interaction
         private void Awake()
         {
             _renderer = GetComponent<Renderer>();
-            _originalMaterials = _renderer.sharedMaterials;
+            _originalMaterials = _renderer.materials;
         }
 
         public void EnableHighlight()
@@ -31,11 +31,12 @@ namespace Game.Scripts.Systems.Interaction
             if (_highlightConfig == null || _highlightConfig.Material == null)
                 return;
 
-            // Match slot count to avoid submesh/material mismatch warnings.
+            // Создаем новые материалы. Используем заполнение, чтобы заменить все материалы объекта
+            // на случай если их у него несколько
             _highlightMaterials = new Material[_originalMaterials.Length];
             Array.Fill(_highlightMaterials, _highlightConfig.Material);
 
-            _renderer.sharedMaterials = _highlightMaterials;
+            _renderer.materials = _highlightMaterials;
             _isHighlighted = true;
         }
 
@@ -44,7 +45,7 @@ namespace Game.Scripts.Systems.Interaction
             if (!_isHighlighted)
                 return;
 
-            _renderer.sharedMaterials = _originalMaterials;
+            _renderer.materials = _originalMaterials;
             _isHighlighted = false;
         }
     }

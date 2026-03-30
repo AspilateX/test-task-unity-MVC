@@ -539,7 +539,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rotationTarget: {fileID: 8911545860180983173}
   _screenText: {fileID: 2139300507911906283}
-  _serializableRotationMap:
+  _knobRotationMap:
   - <Mode>k__BackingField: 0
     <Rotation>k__BackingField: 0
   - <Mode>k__BackingField: 1

@@ -9,13 +9,13 @@ namespace Game.Scripts.Models
     {
         event Action<MultimeterMode> ModeChanged;
 
-        void SetDevice(IElectricalDevice device);
-
         double GetDeviceData(MultimeterMode mode);
 
         void SelectNextMode();
 
         void SelectPreviousMode();
+
+        void SetDevice(IElectricalDevice device);
 
         void SwitchMode(MultimeterMode mode);
     }

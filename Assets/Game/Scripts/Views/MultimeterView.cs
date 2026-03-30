@@ -21,7 +21,6 @@ namespace Game.Scripts.Views
         private TextMeshProUGUI _screenText;
 
         [SerializeField]
-        [FormerlySerializedAs("_serializableRotationMap")]
         private MultimeterRotationMap[] _knobRotationMap;
 
         public override void SetMultimeterData(MultimeterMode newMode, double newValue)
