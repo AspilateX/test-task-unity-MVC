@@ -1,6 +1,4 @@
-﻿# digi-tech-test-project
-
-## Описание тестового задания.
+﻿## Описание тестового задания.
 Ссылка на тестовое задание:
 https://drive.google.com/file/d/1QQCaAGWTQpLA-IK_iszX-xNhdYJDeYgA/view?usp=sharing
 
