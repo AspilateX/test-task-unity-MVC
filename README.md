@@ -1,5 +1,9 @@
 ﻿# digi-tech-test-project
 
+## Описание тестового задания.
+Ссылка на тестовое задание:
+https://drive.google.com/file/d/1QQCaAGWTQpLA-IK_iszX-xNhdYJDeYgA/view?usp=sharing
+
 ## Запуск и точка входа
 Откройте директорию с проектом в Unity версии `2022.1.23f1` или выше, перейдите в сцену `Assets/Game/Scenes/Main.unity`, запустите режим игры.
 
